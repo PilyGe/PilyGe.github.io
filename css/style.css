@@ -1,9 +1,10 @@
 
-.body { 
+body { 
   height: 100%;
 }
 
 /* animation */
+
 
 .animation { 
   display: flex;
@@ -37,6 +38,7 @@
   position: absolute;
   align-items: center;
 animation: replace 5s
+
 }
 
 @keyframes replace {
@@ -45,6 +47,12 @@ animation: replace 5s
   100% {visibility: visible;}
 }
 
+nav { background-color: #F26D88; 
+  padding: 15px; 
+  display: flex;
+  align-items: center; justify-content: space-between; 
+  display: none;
+}
 
 h4 { 
   margin: 0px;
@@ -67,7 +75,7 @@ h3 {
 h1 { 
   color: white;
   font-size: 25px;
-  margin: 30px;
+  margin: 40px;
   background-color: #F26D88; 
 }
 
@@ -82,16 +90,15 @@ p {
 
 .highlight { 
   background-color:#24A9CC;
-  padding:0.1em 0.2em;
+  width: 30px;
 }
-
 
 .about { 
   display: flex; 
   margin-top: 100px;
   margin-right: 100px;
   margin-left: 100px;
-  margin-bottom: 50px
+  margin-bottom: 50px;
   background-color: white;
   text-align: center; 
   font-family: 'Open Sans', sans-serif;
@@ -103,21 +110,20 @@ p {
   display: grid;
   grid-gap: 0px;
   grid-template-columns: 1fr 1fr 1fr; 
-  margin: 20px;
-  justify-content: flex-start;
+  margin: 0px;
+  padding: 10px
 }
 
 .cakes, .cupcakes, .macarons {
-  height: auto;%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 20px;
+  justify-content: center;
+  padding: 10px;
 }
 
 .info-container { 
-  text-align: justify-all;
   text-align: center;
   padding: 5px;
   order: 2;
@@ -126,9 +132,11 @@ p {
 
  .cakes, .macarons { 
   background-color: white;
+  border-right: 2px solid lightgrey;
 }
 .cupcakes {  
   background-color: white; 
+   border-right: 2px solid lightgrey;
 }
  
 .container { 
@@ -136,9 +144,8 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-content: center;
   width: auto;
-  height: 100%;
+  height: auto;
 }
 
 /* img slider */
@@ -212,8 +219,8 @@ ul.slider li:target {
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  padding: 30px;
-  margin: 30px; 
+  padding: 10px;
+  margin: 20px; 
   font-family: 'Open Sans', sans-serif;
   color: grey; 
   font-size: 18px;
@@ -242,7 +249,7 @@ legend {
 }
 textarea {
   height: 76px;
-  width: 350px;
+  width: 550px;
   padding: 0;
   margin: 0;
 }
@@ -292,7 +299,7 @@ textarea {
 
 /* smaller screens */
 
-@media only screen and (max-width: 767px) 
+@media only screen and (max-width: 800px) 
 
 { 
 
@@ -303,8 +310,8 @@ textarea {
   grid-template-columns: 1fr; 
   background-color: none;
   height: 100%;
-  width: 550px;
-  align-items: start;
+  width: auto;
+  align-items: flex-start;
 
 }
 
@@ -312,7 +319,7 @@ textarea {
 .cakes, .cupcakes, .macarons {
   padding: 20px;
   height: auto;
-  width: 500px;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -322,7 +329,6 @@ textarea {
   display: flex;
   padding: 20px;
   margin: 0px;
-  margin-top: 0px;
   width: auto;
   text-align: center;
   align-content: flex-start;
@@ -339,6 +345,7 @@ textarea {
   background-repeat: repeat-x;
   background-size: 10px 10px;
   flex-direction: row-reverse;
+  border: none;
 }
 
 
@@ -370,6 +377,7 @@ textarea {
   width: 70%;
   height: 100%;
   padding: 15px;
+  margin: 0px;
 }
 
 
@@ -442,24 +450,24 @@ ul.slider li:target {
 .contact-us { 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center:;
+  align-items: stretch;
+  justify-content: center;
   margin-top: 10px; 
   font-family: 'Open Sans', sans-serif;
   color: grey; 
   font-size: 18px;
-  line-height: 2; 
 }
 
 
 form { 
-  width: 400px;
+  width: 500px;
+  margin: 0px;
   padding: 0px;
-  border: 1px solid blue;
+  height: auto;
 }
 
 
-fieldset {
+fieldset, legend, label {
   margin: 0;
   padding: 0;
   border: 0;
@@ -467,21 +475,14 @@ fieldset {
 fieldset:not(:first-child) {
   margin-top: 26px;
 }
-legend {
-  padding: 0;
-  font-weight: bold;
-  display: block;
-}
+
 textarea {
   height: 76px;
-  width: 320px;
+  width: 420px;
   padding: 0;
   margin: 0;
 }
-label {
-  left: 0;
-  width: 120px;
-}
+
 .form-row {
   padding-left: 70px;
   position: inherit;
@@ -492,7 +493,7 @@ input[type="text"],
 select {
   border: 1px solid grey;
   padding: 6px;
-  margin: 0;
+  margin: 0px;
   background: #fCECC7;
   border-radius: 4px;
 }
