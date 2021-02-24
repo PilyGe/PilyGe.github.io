@@ -88,9 +88,9 @@ p {
 }
 
 
-.highlight { 
+.highlight {
   background-color:#24A9CC;
-  width: 30px;
+  width: 100px;
 }
 
 .about { 
@@ -109,43 +109,48 @@ p {
 .home { 
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 33.3px 33.3px 33.3px; 
+  justify-content: space-around;
   margin: 0px;
+  width: auto;
+  height: 100%;
   padding: 10px
 }
 
 .cakes, .cupcakes, .macarons {
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
+  padding: 0px;
+  width: auto;
+  height: 100%
+  margin: 0px;
 }
 
 .info-container { 
   text-align: center;
-  padding: 5px;
+  padding: 0px;
   order: 2;
-  width: 30%;
+  margin: 5px;
+  width: 300px;
+  height: auto;
   }
 
  .cakes, .macarons { 
   background-color: white;
-  border-right: 2px solid lightgrey;
 }
 .cupcakes {  
   background-color: white; 
-   border-right: 2px solid lightgrey;
 }
  
 .container { 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: auto;
-  height: auto;
+  height:100%;
 }
 
 /* img slider */
@@ -217,20 +222,25 @@ ul.slider li:target {
 .contact-us { 
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   justify-content: center;
-  padding: 10px;
-  margin: 20px; 
+  align-content: : center;
+  padding: 0px;
+  padding-top: 40px;
+  margin: 0px; 
   font-family: 'Open Sans', sans-serif;
   color: grey; 
   font-size: 18px;
   line-height: 2;
+  width: 800px;
+  height: 100%;
   
 }
 
 form { 
   padding: 20px;
   margin: 10px;
+  width: auto;
+  height: 100%
 }
 
 
